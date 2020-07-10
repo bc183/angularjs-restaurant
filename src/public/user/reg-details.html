@@ -1,0 +1,46 @@
+<div class="container-fluid">
+
+    <div class="row" ng-if="reg.show">
+        <h2>Please Sign up First</h2>
+        <br><a ui-sref="public.signup"><Button>Sign up NOW!</Button></a>
+    </div>
+    <div id="reg" ng-if ="reg.show==false"class="jumbotron">
+
+        <div class="row">
+            <img class="img-responsive" width="250" height="150" ng-src="{{reg.path}}/images/{{reg.item.category}}.jpg" alt="{{reg.details.name}}">
+            <div class="col-12 col-md">
+                <div>
+                    {{reg.details.name}}
+                </div>
+                <div>
+                    {{reg.details.description}}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h4>First Name : {{reg.item.firstname}}</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h4>Last Name : {{reg.item.lastname}}</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h4>Email : {{reg.item.email}}</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h4>Favorite Dish : {{reg.item.category}}</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h4>Phone Number : {{reg.item.phone}}</h4>
+            </div>
+        </div>
+    </div>
+</div>
